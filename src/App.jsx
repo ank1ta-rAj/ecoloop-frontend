@@ -20,7 +20,7 @@ export default function App() {
     setAnswer("");
 
     try {
-      const res = await axios.post(`${import.meta.env.VITE_API}/ask`, {
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}/ask`, {
         question,
       });
 
